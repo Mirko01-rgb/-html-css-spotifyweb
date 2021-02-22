@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* header */
+/* header and main*/
 header{
 position: relative;
 }
@@ -17,7 +18,7 @@ position: relative;
 
 
 .horizontal-nav{
-  height: 100px;
+  height: 70px;
   width: 80%;
   /* debug */
   background-color: red;
@@ -27,25 +28,87 @@ position: relative;
 .vertical-nav{
   height: 85vh;
   width: 20%;
+  padding: 0 5px;
   /* debug */
-  border: 1px solid black;
+  background-color: #000000;
 }
 
+.vertical-nav img{
+  width: 50%;
+  margin: 10px 20px ;
+  position: relative;
+}
+
+/* main */
 .main{
   width: 80%;
-   height: calc(100vh - 15vh - 100px);  /* calcolo per overflow= 100vh (viewport) - 15vh (footer) -100px (nav-horizontal) */
+  height: calc(100vh - 15vh - 70px );  /* calcolo per overflow= 100vh (viewport) - 15vh (footer) -100px (nav-horizontal) */
   overflow: auto;
   position: absolute;
-  top:100px;
+  top:70px;
+  padding: 0 10px;
 
 }
 
 
-/* inizio main */
 
+/* listato generale */
+ul li a{
+  text-decoration: none;
+  color: #A3A3A3;
 
-.flex{
-  display: flex;
+}
+
+.home-search-library li a i{
+  font-size: 17px;
+}
+
+.home-search-library{
+  margin-bottom: 20px;
+}
+
+.listato-vertical-nav p a{
+  text-decoration: none;
+  color: #A3A3A3;
+}
+
+.listato-vertical-nav p{
+  margin-bottom: 10px;
+}
+
+ul li{
+  margin-bottom: 10px;
+  font-size: 10px;
+  list-style: none;
+}
+
+.listato-vertical-nav{
+  padding-left: 20px;
+}
+
+.listato-with-scrool ul{
+  height: 150px;
+  width: 253%;
+  overflow: auto;
+}
+
+.white i {
+  color: white;
+}
+
+.install-app{
+  border-bottom: 1px solid #A3A3A3;
+  width: 17%;
+  position: absolute;
+  bottom:30px;
+  font-size: 14px;
+
+}
+
+.absolute{
+  position: absolute;
+  bottom:0;
+  font-size: 15px;
 }
 
 
@@ -54,7 +117,8 @@ position: relative;
   height: 15vh;
   /* debug */
   background-color:blue;
-  z-index: 999;
+
+
 }
 
 
@@ -63,4 +127,11 @@ position: relative;
   bottom: 0;
   height: 15vh;
   width: 100%;
+}
+
+
+
+/* mediaquery 780px xs */
+.mediaquery-xs{
+  display:none ;
 }

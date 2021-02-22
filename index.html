@@ -9,6 +9,9 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
     <!-- Latest compiled and minified JavaScript -->
@@ -21,7 +24,96 @@
     <!-- vertical nav -->
     <div class="flex-header">
       <div class="vertical-nav">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+
+        <img class="logo" src="img/logo.svg" alt="logo">
+        <div class="listato-vertical-nav">
+          <ul class="home-search-library">
+            <li>
+              <a class="white" href="#">
+                <i class="fas fa-home">Home</i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-search">Search</i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-book-open">La tua libreria</i>
+              </a>
+            </li>
+          </ul>
+
+          <p>
+            <a class="white" href="#">PLAYLIST</a>
+          </p>
+          <p>
+            <a href="#">
+              <i class="fas fa-plus-square">Crea Playlist</i>
+            </a>
+          </p>
+          <div class="list-with-scrool">
+            <ul>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li>
+                <a href="#">Nome Playlist</a>
+              </li>
+              <li class="install-app">
+                <a href="#">
+                  <i class="fas fa-arrow-circle-down">Install app</i>
+                </a>
+              </li>
+              <li class="absolute">
+                <a href="#">
+                  <i class="fas fa-user-circle">Mirko Sbaglia</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- mediaquery 768 px xs -->
+        <div class="mediaquery-xs">
+          <img class="logo-small" src="img/logo-small.svg" alt="logo-small">
+          <p>
+            <a href="#">
+              <i class="fas fa-home"></i>
+            </a>
+          </p>
+
+          <p>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </p>
+          <p>
+            <a href="#">
+              <i class="fas fa-book-open"></i>
+            </a>
+          </p>
+
+
+        </div>
+
+
 
       </div>
       <div class="horizontal-nav">
@@ -49,7 +141,7 @@
   </main>
 
   <!-- inizio footer -->
-  <footer>
+  <footer class="position-fixed" >
     <div class="flex-footer">
       <div class="footer">
 
