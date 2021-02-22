@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.flex-header{
+  display: flex;
+
+}
+
+.vertical-nav{
+  height: 85vh;
+  width: 20%;
+  /* debug */
+  background-color: blue;
+}
+
+.horizontal-nav{
+  height: 100px;
+  width: 80%;
+  /* debug */
+  background-color: red;
+}
+
+/* inizio main */
+
+
+
+
+
+/* inizio footer */
+.footer{
+  height: 15vh;
+  /* debug */
+  background-color: darkblue;
+}
