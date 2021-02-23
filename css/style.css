@@ -172,7 +172,7 @@ margin-bottom: 10px;
   display: flex;
   justify-content: center;    /* per il listato main  */
   /* debug */
- /* border: 1px solid white; */
+  /* border: 1px solid white;  */
 }
 
 .listato-main ul li{
@@ -212,11 +212,12 @@ margin-bottom: 10px;
 }
 
 .box{
-  width: calc(85% / 6);
-  margin-right: 15px;
+  width: calc(90% / 6);
+  margin-right: 17px;
   min-width: 140px;  /* larghezza minima poi va a capo  */
+  margin-bottom: 20px;
   /* debug */
-  /* background-color: orange;
+   /* background-color: orange;
   border: 1px solid white */
 }
 
@@ -243,6 +244,7 @@ margin-bottom: 10px;
   text-align: center;
 }
 
+.box-radius
 
 
 /* inizio footer */
