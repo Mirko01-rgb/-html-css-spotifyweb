@@ -172,7 +172,7 @@ margin-bottom: 10px;
   display: flex;
   justify-content: center;    /* per il listato main  */
   /* debug */
- border: 1px solid white;
+ /* border: 1px solid white; */
 }
 
 .listato-main ul li{
@@ -206,23 +206,27 @@ margin-bottom: 10px;
 .music{
   display: flex;
   flex-wrap: wrap;
-  min-height: 290px;
+  min-height: 160px;
   /* debug */
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .box{
-  height: 160px;
   width: calc(85% / 6);
   margin-right: 15px;
+  min-width: 140px;  /* larghezza minima poi va a capo  */
   /* debug */
-  background-color: orange;
-  border: 1px solid white
+  /* background-color: orange;
+  border: 1px solid white */
+}
+
+.box a{
+  text-decoration: none;
 }
 
 .box img{
   width: 100%;
-  height: 100%;
+
 }
 
 
@@ -242,22 +246,17 @@ margin-bottom: 10px;
 
 
 /* inizio footer */
-.flex-footer{
-  display: flex;
+footer{
+
   height: 15vh;
   width: 100%;
   background-color: red;
+  display: flex;
   align-content:flex-end;
 
-}
-
-.position-fixed-1{
-  position: fixed;
-  bottom: 0;
-  height: 15vh;
-  width: 100%;
 
 }
+
 
 
 
