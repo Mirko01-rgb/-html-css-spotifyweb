@@ -42,7 +42,7 @@
     text-decoration: none;
   }
 
-  
+
 
 }
 
@@ -51,6 +51,15 @@
     width: 90%;
     display: block;
     margin: 10px auto;
+  }
+
+  .box{
+    min-width: 250px;
+
+  }
+
+  .box p{
+    margin-bottom: 20px;
   }
 
 
