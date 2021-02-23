@@ -20,8 +20,7 @@ position: relative;
 .horizontal-nav{
   height: 70px;
   width: 80%;
-  /* debug */
-  background-color: red;
+  background-color: #080B12;
 
 }
 
@@ -51,7 +50,7 @@ position: relative;
 }
 
 
-
+/* Vertical nav */
 /* listato generale */
 ul li {
   padding-left: 20px;
@@ -128,16 +127,29 @@ ul li:hover{
   border-left: 2px solid orange;
 }
 
+/* scrool Nome Playlist */
+.listato-vertical-nav .list-with-scrool{
+  height: 145px;
+  width: 150px;
+  overflow: auto;
+
+}
+
+/* horizontal nav */
+
+
+
+
+
+
+
 
 /* inizio footer */
 .footer{
   height: 15vh;
   /* debug */
   background-color:blue;
-
-
 }
-
 
 .position-fixed{
   position: fixed;
