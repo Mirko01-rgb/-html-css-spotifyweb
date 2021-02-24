@@ -102,6 +102,7 @@ margin-bottom: 10px;
   position: absolute;
   bottom:40px;
   font-size: 14px;
+  padding-top: 20px;
 }
 
 .install-app a i{
@@ -135,9 +136,10 @@ margin-bottom: 10px;
   color: white;
 }
 
+
 /* scrool Nome Playlist */
 .listato-vertical-nav .list-with-scrool{
-  height: 145px;
+  height: 120px;
   width: 150px;
   overflow: auto;
 
@@ -147,7 +149,9 @@ margin-bottom: 10px;
 
 /* horizontal nav */
 .horizontal-nav{
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .horizontal-nav span{
@@ -155,10 +159,7 @@ margin-bottom: 10px;
   border: 1px solid white;
   border-radius: 50px;
   padding: 10px 30px;
-  position: absolute;
-  right: 20px;
-  top: 15px;
-
+  margin-right: 50px;
 }
 
 .horizontal-nav span a{
@@ -233,7 +234,7 @@ margin-bottom: 10px;
   color: white;
   font-size: 13px;
   text-align: center;
-  margin: 10px 0;
+  margin: 25px 0;
 }
 
 .box p{
@@ -279,13 +280,17 @@ margin-bottom: 10px;
 
 /* inizio footer */
 footer{
-  width: 100%;
-  height: 15vh;
+
   background-color:rgba(8,12,17,255);
   display: flex;
   align-items: center;
   justify-content: center;
   align-content:flex-end;
+  position: fixed;
+  bottom: 0;
+  height: 15vh;
+  width: 100%;
+
 
 
 }
