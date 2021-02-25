@@ -6,48 +6,33 @@
 }
 
 /* header and main*/
-header{
-position: relative;
-}
 
 .flex-header{
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
 }
 
 
 .horizontal-nav{
   height: 70px;
-  width: 80%;
+  width: 100%;
   background-color: #2F3436;
-
-
-
+  padding: 0;
 }
 
 .vertical-nav{
   height: calc(100vh - 90px );   /* altezza data da 100vh -90 px del footer */
-  width: 20%;
-  padding: 0 5px;
-  /* debug */
+  width: 250px;
   background-color: #000000;
-}
-
-.vertical-nav img{
-  width: 50%;
-  margin: 10px 20px ;
-  position: relative;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* main */
 .main{
-  width: 80%;
+  width: calc(100% - 250px);
   height: calc(100vh - 90px );  /* altezza main 100vh (viewport) - 15vh (footer)*/
   overflow: auto;  /* altezza è uguale a quella del main  */
-  position: absolute;
-  top:70px;
-  padding: 0 10px;
   background-color: #141922;
 
 }
@@ -64,15 +49,58 @@ ul li a{
   color: #A3A3A3;
 }
 
+.section1{
+  flex-basis: 10%;
+  /* debug */
+  /* background-color: red; */
+
+}
+
+.section2{
+  flex-basis: 10%;
+  /* debug */
+  /* background-color: yellow; */
+
+}
+
+.section3{
+  flex-basis: 10%;
+  /* debug */
+  /* background-color: green; */
+}
+
+.section4{
+   min-height: 80px;  /* altezza minima affinchè si restringa la section4   */
+  flex-grow: 1;
+  overflow: auto;   /* scrool  */
+  overflow: hidden;   /* per nascondere la barra dello scrool  */
+  /* debug */
+  /* background-color: lightblue; */
+}
+
+.section5{
+  flex-basis: 10%;
+  /* debug */
+  /* background-color: brown; */
+
+}
+
+.loghi-xs{
+  display: none;
+}
+
+.vertical-nav img{
+  width: 50%;
+  margin: 10px 20px ;
+  position: relative;
+}
+
 /* First list */
 .home-search-library .fas{
   font-size: 20px;
   margin-right: 10px;
 }
 
-.home-search-library{
-  margin-bottom: 20px;
-}
 
 /* Second list */
 .playlist  a{
@@ -88,61 +116,44 @@ ul li{
   list-style: none;
 }
 
-.listato-vertical-nav .fa-plus-square{
+.fa-plus-square{
 font-size: 35px;
-margin-right: 10px;
-margin-bottom: 10px;
-
 }
 
 /* Third list */
 .install-app{
   border-bottom: 1px solid #A3A3A3;
-  /* position: absolute;
-  bottom:40px; */
   font-size: 14px;
-  padding-top: 20px;
+
 }
 
 .install-app a i{
-  margin-right: 25px
+  margin-right: 25px;
+  padding-top: 10px;
 }
 
-.absolute a i{
-  margin-right: 10px
+.circle a i{
+  margin-right: 10px;
 }
 
 
-.absolute .fa-user-circle{
+.circle .fa-user-circle{
   color: white;
   font-size: 30px;
 
 }
 
-.absolute{
-  /* position: absolute;
-  bottom:0; */
-  font-size: 15px;
-}
-
-
-.listato-vertical-nav ul li:hover{
+.vertical-nav ul li:hover{
   border-left: 2px solid orange;
 
 }
 
-.listato-vertical-nav ul li a:hover{
+.vertical-nav ul li a:hover{
   color: white;
 }
 
 
-/* scrool Nome Playlist */
-.listato-vertical-nav .list-with-scrool{
-  height: 120px;
-  width: 150px;
-  overflow: auto;
 
-}
 
 
 
@@ -169,6 +180,18 @@ margin-bottom: 10px;
 .horizontal-nav span:hover{
   font-size: 15px;
 }
+
+.position-fixed-horizontal{
+  position: fixed;
+  top: 0;
+  
+  height: 30px;
+  width: calc(100% - 250px);
+
+
+}
+
+
 
 
 /* listato main */
@@ -199,6 +222,7 @@ margin-bottom: 10px;
 .title{
   color: white;
   margin: 30px 0;
+  padding-left: 20px;
 }
 
 .title p{
@@ -211,6 +235,7 @@ margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   min-height: 160px;
+  margin-left: 20px;
   /* debug */
    /* border: 1px solid green; */
 }
@@ -223,6 +248,7 @@ margin-bottom: 10px;
    /* background-color: orange; */
   /* border: 1px solid white */
 }
+
 
 .box img{
   width: 100%;
@@ -280,52 +306,12 @@ margin-bottom: 10px;
 
 
 
-/* prove */
-.list-with-scrool {
-  height: 200px;
-  width: 200px;
-  display: flex;
-}
-
-.third-list{
-  flex-grow: 1;
-}
-
-
-
-.listato-vertical-nav{
-  display: flex;
-  flex-direction: column;
-
-
-}
-
-.fourth-list{
-  border: 1px solid white;
-  height: 200px;
-  width: 200px;
-
-
-
-}
-
-.position-fixed{
-  position: fixed;
-  bottom: 150px;
-  height: 200px;
-  width: 200px;
-}
-
-
-
 /* inizio footer */
 footer{
   background-color: #282828;
-  color: white;
   height: 90px;
   padding: 0 20px;
   position: fixed;
-  z-index: 900;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -334,36 +320,40 @@ footer{
   align-items: center;
 
 }
+
+
 /* parte destra footer */
 .left-footer{
-  height: 80px;
-  width: 300px;
-   background-color: red;
+  width: 25%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* debug */
+  /* background-color: green; */
 }
 
 /* contenitore immagine footer */
 .container-immagine-footer{
-  width: 100px;
+  width: 60px;
   height: 60px;
-  background-color: yellow;
+  /* debug */
+  /* background-color: yellow; */
 }
 
 .container-immagine-footer img {
   width: 100%;
-  height: 100%;
+
 }
 
 /* contenitore text-sinister */
 .container-text-sinister{
-  width: 110px;
-  height: 60px;
-  background-color: green;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* debug */
+  /* width: 110px;
+  height: 60px;
+  background-color: green;*/
 }
 
 .container-text-sinister a{
@@ -379,12 +369,13 @@ footer{
 
 /* contenitore icons */
 .container-icons{
-  width: 60px;
-  height: 60px;
-  background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* debug */
+  /* width: 60px;
+  height: 60px;
+  background-color: lightblue;*/
 }
 
 .container-icons a i{
@@ -411,23 +402,24 @@ footer{
 /* parte centrale footer */
 
 .container-central-footer{
-  height: 80px;
-  width: 600px;
-  background-color: yellow;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* debug */
+  /* background-color: yellow; */
 }
 
 /* container-up */
 .container-up{
-  width: 500px;
-  height: 35px;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* debug */
+  /* width: 500px;
+  height: 35px;
+  background-color: red;*/
 
 }
 
@@ -450,13 +442,15 @@ footer{
 
 /* container-down */
 .container-down{
-  width: 500px;
-  height: 35px;
-  background-color: green;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* debug */
+  /* height: 35px;
+  background-color: green; */
 }
+
 
 .container-down p a{
   color: #A3A3A3;
@@ -465,7 +459,7 @@ footer{
 
 .barra{
   height: 3px;
-  width: 300px;
+  width: 45%;
   background-color:#A3A3A3;
   margin: 0 10px;
 }
@@ -483,12 +477,12 @@ footer{
 
 /* parte destra footer */
 .container-right-footer{
-  height: 80px;
-  width: 300px;
-   background-color: green;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* debug */
+  /*  background-color: green; */
 
 }
 
