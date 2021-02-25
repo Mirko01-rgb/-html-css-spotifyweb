@@ -45,22 +45,3 @@
 
 
 }
-
-@media screen and (min-width:1px) and (max-width:767px){
-  .mediaquery-xs .logo-small  {
-    width: 90%;
-    display: block;
-    margin: 10px auto;
-  }
-
-  .box{
-    min-width: 250px;
-
-  }
-
-  .box p{
-    margin-bottom: 20px;
-  }
-
-
-}
