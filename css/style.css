@@ -17,6 +17,7 @@
   width: 100%;
   background-color: #2F3436;
   padding: 0;
+
 }
 
 .vertical-nav{
@@ -73,7 +74,6 @@ ul li a{
    min-height: 80px;  /* altezza minima affinchè si restringa la section4   */
   flex-grow: 1;
   overflow: auto;   /* scrool  */
-  overflow: hidden;   /* per nascondere la barra dello scrool  */
   /* debug */
   /* background-color: lightblue; */
 }
@@ -155,13 +155,21 @@ font-size: 35px;
 
 
 
-
+main{
+  position: relative;
+}
 
 /* horizontal nav */
 .horizontal-nav{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: absolute;
+  top: 0;
+  width: calc(100% - 250px);
+  opacity: 0.5;
+  z-index: 999;       /*  */
+
 
 }
 
@@ -186,6 +194,7 @@ font-size: 35px;
 
 /* listato main */
 .listato-main{
+  margin-top: 70px;
   display: flex;
   justify-content: center;    /* per il listato main  */
   /* debug */
