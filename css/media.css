@@ -9,6 +9,10 @@
     width: 100%;
   }
 
+  .horizontal-nav{
+    width: 90%;
+  }
+
   .section1{
     display: none;
   }
@@ -49,6 +53,105 @@
     font-size: 31px;
     color: white;
   }
+
+  /* parte sinistra footer */
+  .container-text-sinister p{
+    color: #A3A3A3;
+    font-size: 6px;
+  }
+
+  .container-text-sinister h3{
+    font-size: 8px;
+  }
+
+  .container-icons a i{
+    margin-left: 2px;
+    font-size: 12px;
+  }
+
+  .container-icons{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-immagine-footer{
+    width: 30px;
+    height: 30px;
+    /* debug */
+    /* background-color: yellow; */
+  }
+
+  /* hover */
+  .container-text-sinister h3:hover{
+    font-size: 8px;
+  }
+
+  .container-text-sinister p:hover{
+    color: white;
+  }
+  .container-icons a i:hover{
+    font-size: 14px;
+    color: white;
+
+  }
+
+
+
+  /* parte centrale footer */
+  .container-up a i{
+    color: #A3A3A3;
+    margin: 2px 2px;
+    font-size: 13px;
+
+  }
+
+  .container-down p a{
+    color: #A3A3A3;
+    text-decoration: none;
+    font-size: 11px;
+
+  }
+
+  .barra{
+    height: 3px;
+    width: 25%;
+    background-color:#A3A3A3;
+    margin: 0 2px;
+  }
+
+
+  /* hover */
+
+  .container-up a i:hover{
+    font-size: 16px;
+    color: white;
+  }
+
+  .container-down p a:hover{
+    font-size: 13px;
+    color: white;
+  }
+
+
+  /* parte destra footer */
+  .container-right-footer i{
+    color: #A3A3A3;
+    margin-right: 2px;
+    font-size: 10px;
+
+  }
+
+  .barra-xs{
+    margin: 0 2px;
+
+  }
+
+  /* hover */
+  .container-right-footer i:hover{
+    color: white;
+    font-size: 11px;
+  }
+
 }
 
 
@@ -113,69 +216,5 @@
   .barra-xs{
     margin: 0 2px;
   }
-
-}
-
-@media screen and (max-width:500px) {
-
-  /* parte sinistra footer */
-  .container-text-sinister p{
-    color: #A3A3A3;
-    font-size: 6px;
-  }
-
-  .container-text-sinister h3{
-    font-size: 8px;
-  }
-
-  .container-icons a i{
-    margin-left: 2px;
-    font-size: 12px;
-  }
-
-  .container-icons{
-    display: flex;
-    flex-direction: column;
-  }
-
-
-
-  /* parte centrale footer */
-  .container-up a i{
-    color: #A3A3A3;
-    margin: 2px 2px;
-    font-size: 13px;
-
-  }
-
-  .container-down p a{
-    color: #A3A3A3;
-    text-decoration: none;
-    font-size: 11px;
-
-  }
-
-  .barra{
-    height: 3px;
-    width: 25%;
-    background-color:#A3A3A3;
-    margin: 0 2px;
-  }
-
-
-
-  /* parte destra footer */
-  .container-right-footer i{
-    color: #A3A3A3;
-    margin-right: 2px;
-    font-size: 10px;
-
-  }
-
-  .barra-xs{
-    margin: 0 2px;
-  }
-
-
 
 }
