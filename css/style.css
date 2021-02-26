@@ -445,24 +445,55 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* debug */
-  /* height: 35px;
-  background-color: green; */
+  position: relative;
+ /* debug */
+  /* height: 35px;*/
+  /* background-color: green; */
 }
 
 
 .container-down p a{
   color: #A3A3A3;
   text-decoration: none;
+
 }
 
 .barra{
-  height: 3px;
+  height: 5px;
   width: 45%;
   background-color:#A3A3A3;
+  border-radius: 30px;;
   margin: 0 10px;
+
+
 }
 
+.barracolorata-white{
+  height: 5px;
+  width: 60%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.barracolorata{
+  height: 5px;
+  width: 100%;
+  background-color: orange;
+  border-radius: 30px;
+  display: none;
+
+}
+
+.pallino{
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 1px;
+  right: 44%;
+  display: none;
+}
 
 /* hover */
 .container-down p a:hover{
@@ -471,6 +502,13 @@ footer{
 }
 
 
+.barra:hover .barracolorata{
+  display: block;
+}
+
+.barra:hover .pallino{
+  display: block;
+}
 
 
 
@@ -480,17 +518,48 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+
   /* debug */
-  /*  background-color: green; */
+    /* background-color: green; */
 
 }
 
 .barra-xs{
-  height: 3px;
+  height: 5px;
   width: 30%;
   background-color:#A3A3A3;
+  border-radius: 30px;
   margin: 0 10px;
+  position: relative;
 
+}
+
+.barracolorata-xs-white{
+  background-color: white;
+  width: 30%;
+  height: 5px;
+  border-radius: 30px;
+}
+
+.barracolorata-xs{
+  height: 5px;
+  width: 100%;
+  background-color: orange;
+  border-radius: 30px;
+  display: none;
+
+
+}
+
+.pallino-xs{
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: -6px;
+  left: 29%;
+  display: none;
 }
 
 .container-right-footer i{
@@ -507,6 +576,15 @@ footer{
 .container-right-footer i:hover{
   color: white;
   font-size: 20px;
+}
+
+
+.barra-xs:hover .barracolorata-xs{
+  display: block;
+}
+
+.barra-xs:hover .pallino-xs{
+  display: block;
 }
 
 
